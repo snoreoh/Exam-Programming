@@ -85,7 +85,7 @@ class SharedPtr {
       delete n;
     }
     p = ptr;
-    n = new std::atomic_uint(1);
+    n = new std::atomic_uint[1];
   }
   void swap(SharedPtr& r) {
     std::swap(p, r.p);
